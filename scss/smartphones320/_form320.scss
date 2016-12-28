@@ -1,0 +1,120 @@
+/*** FORM ***/
+@media only screen and (min-device-width : 320px) {
+    #contact {
+        position: relative;
+        top: 50px;
+        // height: 400px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 20px;
+        height: 50px;
+        width: 550px;
+        border: 1px solid #24BA9F;
+        display: inline-block;
+        float: left;
+        clear: both;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    textarea {
+        font-size: 20px;
+        border: 1px solid #24BA9F;
+        display: inline-block;
+        float: left;
+        clear: both;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+        resize: none;
+        height: 130px;
+        width: 550px;
+    }
+
+    .checkbox {
+        display: block;
+        position: relative;
+        width: 40%;
+        height: 20%;
+        float: right;
+        top: 45px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+    }
+
+    #agree {
+        float: left;
+        display: block;
+        height: 36px;
+        width: 36px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    #claim::after,
+    #claim::before {
+        border: 1px solid #24BA9F;
+        content: "";
+        display: block;
+        float: left;
+        left: 0;
+        height: 36px;
+        position: absolute;
+        width: 36px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    #claim {
+        display: block;
+        position: relative;
+        font-size: 17px;
+        color: #a8a8a9;
+        padding-left: 55px;
+        line-height: 120%;
+        cursor: pointer;
+        font-family: 'ralewaythin', arial, sans-serif;
+    }
+
+    #claim::after {
+        background-image: url("../images/form_ok.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+    }
+
+    #agree:checked + #claim::after {
+        display: block;
+    }
+
+    .submit_btn {
+        position: relative;
+        color: #fff;
+        font-family: 'ralewaybold', arial, sans-serif;
+        font-size: 24px;
+        background-color: #24BA9F;
+        padding: 14px 105px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        top: 235px;
+        left: 48px;
+    }
+
+    .photo3 {
+        position: relative;
+        top: -195px;
+        left: -80px;
+        float: right;
+        width: 200px;
+        height: 150px;
+        background-image: url("../images/red_chair.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

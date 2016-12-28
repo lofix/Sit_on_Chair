@@ -1,0 +1,43 @@
+/*** HEADER ***/
+@media only screen and (min-width : 320px) {
+    header {
+        display: inline-block;
+        background-color: #000;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    #hamburger_menu {
+        display: inline-block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 4px;
+
+        .hamburger_bar {
+            height: 2px;
+            background-color: #fff;
+            width: 35px;
+            margin: 8px 0;
+        }
+    }
+
+    .logo {
+        font-family: 'ralewayregular', arial, sans-serif;
+        letter-spacing: 2px;
+        color: #fff;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 128px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+}

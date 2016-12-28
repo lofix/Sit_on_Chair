@@ -1,0 +1,81 @@
+/*** GALLERY ***/
+@media only screen and (min-device-width : 320px) {
+    #gallery {
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        top: 50px;
+    }
+
+    #photo_gallery {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .photo {
+        margin: 20px auto;
+        width: 280px;
+        height: 200px;
+    }
+
+    #photo1 {
+        background-image: url('../images/box1_img.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    #photo1:hover .overlay,
+    #photo2:hover .overlay {
+        display: none;
+    }
+
+    #photo2 {
+        background-image: url('../images/box2_img.jpg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    #description {
+        box-sizing: border-box;
+        border: 1px solid lightgrey;
+        margin: 20px 0;
+    }
+
+    .section_header {
+        display: block;
+        font-family: 'ralewaybold', arial, sans-serif;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    u {
+        border-bottom: 8px solid #24BA9F;
+        text-decoration: none;
+    }
+
+    #description_2 {
+        padding: 10px 20px;
+        font-family: 'ralewayregular', arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #A8A8A9;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 60px;
+        font-family: 'ralewaybold', arial, sans-serif;
+        background-color: rgba(255, 255, 255, .25);
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 130px;
+    }
+}

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sit on chair</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Raleway/stylesheet.css"> </head>
@@ -10,101 +11,117 @@
 <body>
     <header>
         <div class="main_width">
-            <div class="logo"> <a href="#"><h1>Sit <span class="colour_element">on</span> chair</h1></a> </div>
-            <nav class="nav">
-                <ul class="navigation">
-                    <li><a href="#">o firmie</a>
-                        <div class="drop_down">
-                            <div class="arrow_up"></div>
-                            <ul>
-                                <li><a href="#">Aktualności</a></li>
-                                <li><a href="#">Nasz Team</a></li>
-                                <li><a href="#">Historia</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">galeria</a></li>
-                    <li><a href="#">kontakt</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="logo">Sit <span class="colour_element">on</span> chair</a>
+            <ul class="navigation">
+                <li><a href="#">o firmie</a>
+                    <div class="drop_down">
+                        <div class="arrow_up"></div>
+                        <ul>
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Nasz Team</a></li>
+                            <li><a href="#">Historia</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">galeria</a></li>
+                <li><a href="#">kontakt</a></li>
+            </ul>
+            <div id="hamburger_menu">
+                <div class="hamburger_bar"></div>
+                <div class="hamburger_bar"></div>
+                <div class="hamburger_bar"></div>
+            </div>
+
         </div>
     </header>
     <section id="slider">
         <div class="main_width">
-            <div id="left_arrow"> <a href="#">
-                    &lt; </a> </div>
-            <div class="photo_slider" id="photo_slider1"></div>
-            <div class="photo_slider" id="photo_slider2"></div>
-            <div class="photo_slider" id="photo_slider3"></div>
-            <div id="slogan">
-                <h1>Sit <span class="colour_element">on</span> our <span>chair</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatem odit eius enim sint veritatis aliquam facilis ullam magni omnis nostrum ratione quis neque perspiciatis assumenda itaque voluptates hic temporibus!</p> <a href="#" class="btn">Zobacz więcej</a> </div>
-            <div id="right_arrow"> <a href="#">&gt;</a> </div>
+
+            <div id="slider_content">
+                <a href="#" id="left_arrow">
+                &lt; </a>
+                <a href="#" id="right_arrow">&gt;</a>
+                <div class="photo_slider" id="photo_slider1"></div>
+                <div class="photo_slider" id="photo_slider2"></div>
+                <div class="photo_slider" id="photo_slider3"></div>
+                <div id="slogan">
+
+                    <h1>Sit <span class="colour_element">on</span> our <span>chair</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatem odit eius enim sint veritatis aliquam facilis ullam magni omnis nostrum ratione quis neque perspiciatis assumenda itaque voluptates hic temporibus!</p>
+                    <a href="#" class="btn">Zobacz więcej</a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="gallery">
         <div class="main_width">
-            <div class="photo_gallery" id="photo1">
-                <div class="overlay"><u>Chair CLAIR</u></div>
-            </div>
-            <div class="photo_gallery" id="photo2">
-                <div class="overlay"><u>Chair MARGARITA</u></div>
-            </div>
-            <div class="photo_gallery" id="description">
-                <div class="section_header">
-                    <h3><u>Finds all inputs</u></h3> </div>
-                <div id="description_2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maiores quidem laborum fuga repellendus, repudiandae, ab quaerat atque. Praesentium commodi perferendis beatae voluptate assumenda laudantium amet inventore, libero dignissimos ratione.</p>
+            <div id="photo_gallery">
+                <div class="photo" id="photo1">
+                    <div class="overlay"><u>Chair CLAIR</u></div>
+                </div>
+                <div class="photo" id="photo2">
+                    <div class="overlay"><u>Chair MARGARITA</u></div>
+                </div>
+                <div id="description">
+                    <div class="section_header">
+                        <h3><u>Finds all inputs</u></h3> </div>
+                    <div id="description_2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maiores quidem laborum fuga repellendus, repudiandae, ab quaerat atque. Praesentium commodi perferendis beatae voluptate assumenda laudantium amet inventore, libero
+                            dignissimos ratione.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="pricing">
         <div class="main_width">
-            <div class="pricing_header">
-                <h3><u>Cennik</u></h3></div>
-            <div class="price">
-                <div class="circle"></div>
-                <h1>Basic Plan</h1>
-                <div class="price_circle">
-                    <h1>85<span class="superscript">99</span></h1>
-                    <br>
-                    <p>PLN/MSC</p>
-                </div>
-                <ul class="list">
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                </ul> <a href="#" class="btn2">Dolacz!</a> </div>
-            <div class="price second_price">
-                <div class="circle"></div>
-                <h1>Standard Plan</h1>
-                <div class="price_circle">
-                    <h1>95<span class="superscript">99</span></h1>
-                    <br>
-                    <p>PLN/MSC</p>
-                </div>
-                <ul class="list">
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 5 lat</li>
-                </ul> <a href="#" class="btn2">Dolacz!</a> </div>
-            <div class="price">
-                <div class="circle"></div>
-                <h1>Advanced Plan</h1>
-                <div class="price_circle">
-                    <h1>211<span class="superscript">00</span></h1>
-                    <br>
-                    <p>PLN/MSC</p>
-                </div>
-                <ul class="list">
-                    <li>Zakup towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 5 lat</li>
-                    <li>Porady projektanta</li>
-                </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+
+            <h3 class="pricing_header"><u>Cennik</u></h3>
+            <div id="prices">
+                <div class="price">
+                    <div class="circle"></div>
+                    <h1>Basic Plan</h1>
+                    <div class="price_circle">
+                        <h1>85<span class="superscript">99</span></h1>
+                        <br>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <ul class="list">
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+                <div class="price second_price">
+                    <div class="circle"></div>
+                    <h1>Standard Plan</h1>
+                    <div class="price_circle">
+                        <h1>95<span class="superscript">99</span></h1>
+                        <br>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <ul class="list">
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 5 lat</li>
+                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+                <div class="price">
+                    <div class="circle"></div>
+                    <h1>Advanced Plan</h1>
+                    <div class="price_circle">
+                        <h1>211<span class="superscript">00</span></h1>
+                        <br>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <ul class="list">
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 5 lat</li>
+                        <li>Porady projektanta</li>
+                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+            </div>
         </div>
     </section>
-    <section class="application ">
+    <!-- <section class="application ">
         <div class="main_width">
             <section class="choice_part inline">
                 <div>
@@ -149,7 +166,7 @@
                     <div class="sum"><strong></strong></div>
                 </div> <a href="" class="green_button">Zamawiam</a> </section>
         </div>
-    </section>
+    </section> -->
     <section id="contact">
         <div class="main_width">
             <div class="pricing_header">
