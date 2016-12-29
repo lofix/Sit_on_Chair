@@ -13,24 +13,24 @@
 
     #left_arrow {
         display: inline-block;
-        font-family: 'ralewayregular', arial, sans-serif;
+        font-family: 'Lato', arial, sans-serif;
         color: #24BA9F;
         font-size: 80px;
-        margin-left: 20px;
+        margin-left: 10px;
         left: 0;
         position: absolute;
-        top: 30%;
+        top: 40%;
     }
 
     #right_arrow {
         display: inline-block;
-        font-family: 'ralewayregular', arial, sans-serif;
+        font-family: 'Lato', arial, sans-serif;
         color: #24BA9F;
         font-size: 80px;
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 0;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .photo_slider {
@@ -69,7 +69,7 @@
     }
 
     #slogan p {
-        font-family: 'ralewaylight', arial, sans-serif;
+        font-family: 'Lato', arial, sans-serif;
         text-align: center;
         padding-bottom: 20px;
     }
@@ -84,7 +84,7 @@
     .btn {
         display: block;
         color: #fff;
-        font-family: 'ralewayregular', arial, sans-serif;
+        font-family: 'Lato', arial, sans-serif;
         font-size: 1rem;
         background-color: #24BA9F;
         padding: 8px;
