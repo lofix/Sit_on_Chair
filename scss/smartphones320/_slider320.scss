@@ -1,5 +1,5 @@
 /*** SLIDER ***/
-@media only screen and (min-device-width : 320px) {
+@media only screen and (min-width : 320px) {
     #slider {
         width: 100%;
         position: relative;
@@ -19,7 +19,7 @@
         margin-left: 10px;
         left: 0;
         position: absolute;
-        top: 40%;
+        top: 30%;
     }
 
     #right_arrow {
@@ -28,18 +28,13 @@
         color: #24BA9F;
         font-size: 80px;
         position: absolute;
-        top: 40%;
+        top: 30%;
         right: 0;
         margin-right: 10px;
     }
 
     .photo_slider {
         box-sizing: border-box;
-        height: 150px;
-        width: 150px;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
         display: none;
     }
 

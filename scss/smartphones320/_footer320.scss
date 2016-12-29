@@ -9,17 +9,19 @@
     }
 
     #copyright {
-        margin-top: 10px;
+        // margin-top: 10px;
         width: 30%;
-        margin-left: 20px;
+        margin: 0 auto auto 20px;
         float: left;
         color: #a8a8a9;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        position: relative;
+        top: 20px;
     }
 
     #icons {
         height: 80px;
-        // width: 49%;
+        float: right;
         display: flex;
         justify-content: space-around;
         align-items: center;
