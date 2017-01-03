@@ -1,5 +1,10 @@
-@media only screen and (min-device-width : 560px) {
+@media only screen and (min-width : 560px) {
     #photo_gallery {
         flex-direction: row;
+
+        .photo {
+            width: 48%;
+            margin-bottom: 0;
+        }
     }
 }

@@ -1,1 +1,21 @@
-@media only screen and (min-device-width : 560px) {}
+@media only screen and (min-width : 560px) {
+    form {
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    #claim {
+        width: 245px;
+    }
+
+    .checkbox {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .submit_btn {
+        margin-top: 20px;
+        display: inline-block;
+        width: 180px;
+    }
+}

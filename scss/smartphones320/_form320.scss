@@ -1,5 +1,5 @@
 /*** FORM ***/
-@media only screen and (min-device-width : 320px) {
+@media only screen and (min-width : 320px) {
     #contact {
         position: relative;
         top: 50px;
@@ -69,6 +69,7 @@
         line-height: 120%;
         cursor: pointer;
         font-family: 'Lato', arial, sans-serif;
+        width: 245px;
     }
 
     #claim::after {
