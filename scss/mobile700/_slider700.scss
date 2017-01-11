@@ -1,18 +1,28 @@
 @media only screen and (min-width : 700px) {
     #slogan {
+        width: 48%;
+
         h1 {
-            display: inline-block;
+            font-size: 1.75rem;
         }
     }
 
     #slider_inside {
         clear: both;
 
-        p {}
+        p {
+            font-size: 1rem;
+            padding-bottom: 20px;
+        }
 
         .photo_slider {
-            height: 300px;
-            width: 50%;
+            height: 350px;
+            width: 49%;
+            margin-top: 0;
+        }
+
+        .btn {
+            width: 200px;
         }
     }
 }
