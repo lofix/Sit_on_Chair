@@ -1,0 +1,39 @@
+@media only screen and (min-width : 700px) {
+    #prices {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .price {
+        width: 32%;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .circle {
+            display: block;
+            margin: auto;
+            left: 0;
+        }
+    }
+
+    .price_circle {
+        display: block;
+        margin: auto;
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+    .btn2 {
+        margin-left: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .list {
+        font-size: 16px;
+    }
+}

@@ -20,11 +20,11 @@
     }
 
     #icons {
-        height: 80px;
+        position: relative;
+        top: 15px;
         float: right;
         display: flex;
         justify-content: space-around;
-        align-items: center;
     }
 
     #icons img {

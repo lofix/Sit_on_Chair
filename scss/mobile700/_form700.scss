@@ -1,0 +1,38 @@
+@media only screen and (min-width : 700px) {
+    form {
+        width: 90%;
+        margin-left: 20px;
+
+        input[type="text"] {
+            width: 59%;
+        }
+
+        textarea {
+            width: 59%;
+        }
+
+        .checkbox {
+            margin-right: 0;
+            position: relative;
+            bottom: 115px;
+            float: right;
+            clear: both;
+        }
+
+        .submit_btn {
+            float: right;
+            clear: both;
+            position: relative;
+            bottom: 120px;
+            width: 245px;
+        }
+
+        .photo3 {
+            display: block;
+            float: right;
+            clear: both;
+            bottom: 5px;
+            position: relative;
+        }
+    }
+}
