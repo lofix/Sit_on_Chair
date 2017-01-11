@@ -14,7 +14,7 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 90%;
+        width: 75%;
         margin: 0 auto;
     }
 
@@ -74,8 +74,12 @@
         height: 60px;
         font-family: 'Lato', arial, sans-serif;
         background-color: rgba(255, 255, 255, .25);
-        padding-left: 10px;
-        padding-top: 10px;
-        margin-top: 130px;
+        margin-top: 115px;
+
+        u {
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
     }
 }
