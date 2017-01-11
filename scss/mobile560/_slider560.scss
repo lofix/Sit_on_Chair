@@ -1,26 +1,30 @@
 @media only screen and (min-width : 560px) {
     #slogan {
-        width: 80%;
+        width: 60%;
+        float: right;
+        clear: both;
+        margin-top: 60px;
 
         p {
             display: inline-block;
-            width: 54%;
-            float: right;
-            padding-top: 27px;
+            padding-bottom: 10px;
+            font-size: 0.8rem;
         }
 
         h1 {
-            padding-bottom: 0;
+            font-size: 1.5rem;
+            padding-bottom: 10px;
         }
     }
 
     #photo_slider1 {
         display: inline-block;
+        margin-top: 30px;
     }
 
     .photo_slider {
-        height: 215px;
-        width: 38%;
+        height: 200px;
+        width: 35%;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -32,5 +36,10 @@
 
     #left_arrow {
         top: 30%;
+    }
+
+    .btn {
+        // float: right;
+        width: 180px;
     }
 }

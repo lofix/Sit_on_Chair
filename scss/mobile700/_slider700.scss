@@ -2,23 +2,17 @@
     #slogan {
         h1 {
             display: inline-block;
-            float: right;
-            clear: both;
-            position: relative;
-            top: 83px;
         }
     }
 
     #slider_inside {
         clear: both;
 
-        p {
-            padding-top: 90px;
-        }
+        p {}
 
         .photo_slider {
             height: 300px;
-            width: 250px;
+            width: 50%;
         }
     }
 }
