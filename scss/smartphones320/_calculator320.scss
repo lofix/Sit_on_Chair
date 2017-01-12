@@ -235,7 +235,7 @@
     .list_panel {
         background-color: white;
         border: 1px solid #ccc;
-        width: 288px;
+        width: 100%;
         padding-left: 15px;
         padding-bottom: 10px;
         list-style: none;
@@ -243,7 +243,6 @@
         left: 0;
         z-index: 2;
         position: absolute;
-        top: 54px;
         display: none;
     }
 

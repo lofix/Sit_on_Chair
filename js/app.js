@@ -56,8 +56,22 @@ $(document).ready(function() {
             hamburgerMenu.removeClass("invisible");
             hamburgerMenu.addClass("visible");
         })
+    }
+    var productChoice = function() {
+        var dropDown = $(".drop_down_list");
+        dropDown.on("click", function() {
+            var choices = $(this).find(".list_panel");
+            var label = $(this).find(".list_label");
+            choices.toggle("slide");
+            var choice = choices.find("li");
+            choice.on("click", function() {
+                var test = $(this).text();
+                label.text(test);
+            })
+        })
 
     }
+    productChoice();
     mobileNavigation();
     desktopNavigation();
     hideMobNav();
