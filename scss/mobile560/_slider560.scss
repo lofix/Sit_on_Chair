@@ -1,13 +1,13 @@
 @media only screen and (min-width : 560px) {
     #slogan {
-        width: 60%;
+        width: 47%;
         float: right;
-        clear: both;
+        // clear: both;
         margin-top: 60px;
 
         p {
             display: inline-block;
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
             font-size: 0.8rem;
         }
 
@@ -41,5 +41,6 @@
     .btn {
         // float: right;
         width: 180px;
+        margin-top: 10px;
     }
 }

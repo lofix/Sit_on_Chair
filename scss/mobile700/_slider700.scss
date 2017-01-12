@@ -1,6 +1,8 @@
 @media only screen and (min-width : 700px) {
     #slogan {
-        width: 48%;
+        width: 40%;
+        margin-right: 15px;
+        margin-left: 15px;
 
         h1 {
             font-size: 1.75rem;
@@ -10,6 +12,11 @@
     #slider_inside {
         clear: both;
 
+        #left_arrow,
+        #right_arrow {
+            margin-top: 100px;
+        }
+
         p {
             font-size: 1rem;
             padding-bottom: 20px;
@@ -17,7 +24,7 @@
 
         .photo_slider {
             height: 350px;
-            width: 49%;
+            width: 40%;
             margin-top: 0;
         }
 
