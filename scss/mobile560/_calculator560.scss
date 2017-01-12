@@ -1,0 +1,8 @@
+@media only screen and (min-width :560px) {
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

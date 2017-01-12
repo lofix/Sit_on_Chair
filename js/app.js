@@ -6,7 +6,6 @@ $(document).ready(function() {
         $(window).on("resize", function() {
 
             var windowWidth = $(this).width();
-            console.log(windowWidth);
             if (windowWidth >= 542) {
                 mobileNav.css("display", "none");
                 hamburgerMenu.css("display", "none");

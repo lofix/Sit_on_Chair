@@ -12,7 +12,7 @@
 <script src="js/app.js"></script>
 
 <body>
-    <header>
+    <header id="page_header">
         <div class="main_width">
             <a href="#" class="logo">Sit <span class="colour_element">on</span> chair</a>
 
@@ -23,17 +23,19 @@
             </div>
             <div class="desktop_nav">
                 <ul>
-                    <li><a href="#" data-name="#gallery">Products</a></li>
-                    <li><a href="#" data-name="#pricing">Pricing</a></li>
-                    <li><a href="#" data-name="#contact">Contact</a></li>
+                    <li><a href="#" data-name="#gallery">Produkty</a></li>
+                    <li><a href="#" data-name="#pricing">Oferta</a></li>
+                    <li><a href="#" data-name=".application">Kalkulator</a></li>
+                    <li><a href="#" data-name="#contact">Kontakt</a></li>
                 </ul>
             </div>
             <div id="mobile_nav_expanded">
                 <div class="close_button"></div>
                 <ul>
-                    <li><a href="#" data-name="#gallery">Products</a></li>
-                    <li><a href="#" data-name="#pricing">Pricing</a></li>
-                    <li><a href="#" data-name="#contact">Contact</a></li>
+                    <li><a href="#" data-name="#gallery">Produkty</a></li>
+                    <li><a href="#" data-name="#pricing">Oferta</a></li>
+                    <li><a href="#" data-name=".application">Kalkulator</a></li>
+                    <li><a href="#" data-name="#contact">Kontakt</a></li>
                 </ul>
 
             </div>
@@ -123,6 +125,77 @@
             </div>
         </div>
     </section>
+    <section class="application ">
+        <div class="main_width" id="wrapper">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox" id="calculator_checkbox">
+                        <input type="checkbox" id="agree">
+                        <label id="claim" for="agree">Transport</label>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+        </div>
+    </section>
     <section id="contact">
         <div class="main_width">
             <div class="pricing_header">
@@ -132,7 +205,7 @@
                 <input type="text" name="name" placeholder="Imie">
                 <input type="text" name="email" placeholder="E-Mail">
                 <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
-                <div class="checkbox">
+                <div class="checkbox" id="form_checkbox">
                     <input type="checkbox" id="agree">
                     <label id="claim" for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
                 </div>

@@ -34,55 +34,55 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
 
-    .checkbox {
+    #form_checkbox {
         display: block;
         padding-top: 20px;
-    }
 
-    #agree {
-        float: left;
-        display: block;
-        height: 36px;
-        width: 36px;
-        cursor: pointer;
-        opacity: 0;
-    }
+        #agree {
+            float: left;
+            display: block;
+            height: 36px;
+            width: 36px;
+            cursor: pointer;
+            opacity: 0;
+        }
 
-    #claim::after,
-    #claim::before {
-        border: 1px solid #24BA9F;
-        content: "";
-        display: block;
-        float: left;
-        left: 0;
-        height: 36px;
-        position: absolute;
-        width: 36px;
-        top: 0;
-        cursor: pointer;
-    }
+        #claim::after,
+        #claim::before {
+            border: 1px solid #24BA9F;
+            content: "";
+            display: block;
+            float: left;
+            left: 0;
+            height: 36px;
+            position: absolute;
+            width: 36px;
+            top: 0;
+            cursor: pointer;
+        }
 
-    #claim {
-        display: block;
-        position: relative;
-        font-size: 0.9rem;
-        color: #a8a8a9;
-        padding-left: 55px;
-        line-height: 120%;
-        cursor: pointer;
-        font-family: 'Lato', arial, sans-serif;
-        width: 245px;
-    }
+        #claim {
+            display: block;
+            position: relative;
+            font-size: 0.9rem;
+            color: #a8a8a9;
+            padding-left: 55px;
+            line-height: 120%;
+            cursor: pointer;
+            font-family: 'Lato', arial, sans-serif;
+            width: 245px;
+        }
 
-    #claim::after {
-        background-image: url("../images/form_ok.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        display: none;
-    }
+        #claim::after {
+            background-image: url("../images/form_ok.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: none;
+        }
 
-    #agree:checked + #claim::after {
-        display: block;
+        #agree:checked + #claim::after {
+            display: block;
+        }
     }
 
     .submit_btn {
