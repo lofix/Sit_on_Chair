@@ -13,19 +13,20 @@
             filter:blur(1px);
             transition: 0.5s;
         }
-        // ul {
-        //     li {
-        //         font-family: 'lato', arial, sans-serif;
-        //         text-transform: uppercase;
-        //         display: inline-block;
-        //         color: #fff;
-        //         padding-right: 8px;
-        //         line-height: 50px;
-        //     }
-        //
-        //     a:visited {
-        //         color: #fff;
-        //     }
-        // }
+
+        ul {
+            li {
+                font-family: 'lato', arial, sans-serif;
+                text-transform: uppercase;
+                display: inline-block;
+                color: #fff;
+                padding-right: 8px;
+                line-height: 50px;
+            }
+
+            a:visited {
+                color: #fff;
+            }
+        }
     }
 }
