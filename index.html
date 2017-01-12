@@ -8,25 +8,41 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Raleway/stylesheet.css"> </head>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 
 <body>
     <header>
         <div class="main_width">
             <a href="#" class="logo">Sit <span class="colour_element">on</span> chair</a>
-            <div id="hamburger_menu">
+
+            <div id="hamburger_menu" class="visible">
                 <div class="hamburger_bar"></div>
                 <div class="hamburger_bar"></div>
                 <div class="hamburger_bar"></div>
             </div>
+            <div class="desktop_nav">
+                <ul>
+                    <li><a href="#" data-name="#gallery">Products</a></li>
+                    <li><a href="#" data-name="#pricing">Pricing</a></li>
+                    <li><a href="#" data-name="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="mobile_nav_expanded">
+                <div class="close_button"></div>
+                <ul>
+                    <li><a href="#" data-name="#gallery">Products</a></li>
+                    <li><a href="#" data-name="#pricing">Pricing</a></li>
+                    <li><a href="#" data-name="#contact">Contact</a></li>
+                </ul>
 
+            </div>
         </div>
     </header>
     <section id="slider">
         <div class="main_width">
             <div id="slider_content">
                 <div id="slider_inside">
-                    <a href="#" id="left_arrow">&lt;</a>
-                    <a href="#" id="right_arrow">&gt;</a>
                     <div class="photo_slider" id="photo_slider1"></div>
                     <div class="photo_slider" id="photo_slider2"></div>
                     <div class="photo_slider" id="photo_slider3"></div>
@@ -76,7 +92,7 @@
                     <ul class="list">
                         <li>Zakup towaru + dowóz</li>
                         <li>Serwis</li>
-                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+                    </ul> <a href="#" class="btn2">Dołącz!</a> </div>
                 <div class="price second_price">
                     <div class="circle"></div>
                     <h1>Standard Plan</h1>
@@ -89,7 +105,7 @@
                         <li>Zakup towaru + dowóz</li>
                         <li>Serwis</li>
                         <li>Gwarancja 5 lat</li>
-                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+                    </ul> <a href="#" class="btn2">Dołącz!</a> </div>
                 <div class="price">
                     <div class="circle"></div>
                     <h1>Advanced Plan</h1>
@@ -103,7 +119,7 @@
                         <li>Serwis</li>
                         <li>Gwarancja 5 lat</li>
                         <li>Porady projektanta</li>
-                    </ul> <a href="#" class="btn2">Dolacz!</a> </div>
+                    </ul> <a href="#" class="btn2">Dołącz!</a> </div>
             </div>
         </div>
     </section>
@@ -136,7 +152,6 @@
             <a href="#" class="footer_logo">Sit <span>on</span> chair</a>
         </div>
     </footer>
-    <script src="js/app.js"></script>
 </body>
 
 </html>

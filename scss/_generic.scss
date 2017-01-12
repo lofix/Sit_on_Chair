@@ -17,10 +17,11 @@ body {
 a {
     text-decoration: none;
 }
-// .visible {
-//     display: block !important;
-// }
-//
-// .invisible {
-//     display: none !important;
-// }
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

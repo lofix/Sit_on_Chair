@@ -50,9 +50,10 @@
     }
 
     #slider_content {
+        display: inline-block;
         margin: 0 auto;
-        padding-bottom: 30px;
-        padding-top: 30px;
+        // padding-bottom: 30px;
+        // padding-top: 30px;
     }
 
     #slider_content p {
@@ -80,6 +81,17 @@
         border-radius: 5px;
         margin: 20px auto 0;
         width: 165px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .btn:hover {
+        background-color: lighten(#24BA9F,15%);
+        transition: 1s;
+    }
+
+    .btn:not(:hover) {
+        background-color: #24BA9F;
+        transition: 1s;
     }
 
     #slider {

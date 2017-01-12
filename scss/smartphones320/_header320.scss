@@ -1,7 +1,8 @@
 /*** HEADER ***/
 @media only screen and (min-width : 320px) {
     header {
-        display: inline-block;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        display: block;
         background-color: #000;
         height: 50px;
         position: fixed;
@@ -9,17 +10,81 @@
         z-index: 3;
     }
 
+    .desktop_nav {
+        display: none;
+    }
+
     #hamburger_menu {
-        display: inline-block;
+        // display: inline-block;
         float: right;
         margin-right: 20px;
         margin-top: 4px;
+        cursor: pointer;
 
         .hamburger_bar {
             height: 2px;
             background-color: #fff;
             width: 35px;
             margin: 8px 0;
+        }
+    }
+
+    #mobile_nav_expanded {
+        display: none;
+        width: 70%;
+        height: 400px;
+        background-color: lighten(#24BA9F,5%);
+        opacity: 0.96;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: -2px 2px 2.86px 10.14px rgba(0, 0, 0, 0.06);
+
+        .close_button {
+            background-image: url("../images/X_sign.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: right;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-top: 11px;
+            margin-right: 20px;
+        }
+
+        ul:hover li:not(:hover) {
+            filter:blur(1px);
+            transition: 0.5s;
+        }
+
+        ul {
+            display: block;
+            width: 115px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            margin-top: 112px;
+
+            li {
+                font-family: 'lato', arial, sans-serif;
+                text-transform: uppercase;
+                // display: inline-block;
+                color: #fff;
+                padding-bottom: 40px;
+                // line-height: 50px;
+                letter-spacing: 1px;
+                list-style-type: none;
+                text-align: center;
+                font-size: 1.25rem;
+            }
+
+            li:last-child {
+                padding-bottom: 0;
+            }
+
+            a:visited {
+                color: #fff;
+            }
         }
     }
 
