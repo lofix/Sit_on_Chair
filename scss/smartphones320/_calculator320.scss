@@ -163,6 +163,10 @@
         padding-bottom: 10px;
         border-bottom: 1px solid #e7e7e7;
         height: 135px;
+
+        .transport {
+            display: none;
+        }
     }
 
     .panel_right {
@@ -184,6 +188,7 @@
     .panel_right h4 {
         color: #24baa0;
         font-size: 23px;
+        padding-right: 30px;
     }
 
     .panel_left span {
@@ -198,11 +203,12 @@
         font-size: 22px;
         color: #24baa0;
         margin-top: 10px;
+        padding-right: 30px;
     }
 
     .sum_label {
         display: inline-block;
-        width: 185px;
+        width: 175px;
         margin-top: 10px;
         font-size: 22px;
         color: #5b5a5a;
@@ -212,11 +218,12 @@
 
     .sum {
         display: inline-block;
-        width: 100px;
         text-align: right;
         margin-top: 10px;
         font-size: 22px;
         color: #24baa0;
+        position: relative;
+        bottom: 138px;
     }
 
     .list_arrow {
