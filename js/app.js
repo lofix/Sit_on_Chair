@@ -155,11 +155,67 @@ $(document).ready(function() {
 
 
     }
+    var validate = function() {
+        var contactForm = $("#contactform");
+        var usernameInput = $("#username");
+        var emailInput = $("#email");
+        var messageInput = $("#message");
+        var checkbox = $("#agree");
+        var nameError = $("#username_error");
+        var emailError = $("#email_error");
+        var messageError = $("#message_error");
+        var checkboxError = $("#checkbox_error");
+        var success = $("#success_box");
+        var problems = false;
+
+        contactForm.on("submit", function() {
+            event.preventDefault();
+            nameError.hide();
+            emailError.hide();
+            messageError.hide();
+            checkboxError.hide();
+            success.hide();
+            var userName = usernameInput.val();
+            var userEmail = emailInput.val();
+            var userMessage = messageInput.val();
+            //Check username
+            if (userName.length <= 5) {
+                nameError.show();
+                nameError.text("Podane imię jest za krótkie");
+                problems = true;
+            }
+            //Check user email
+            if (userEmail.indexOf("@") <= -1 || userEmail.indexOf(".") <= -1) {
+                emailError.show();
+                emailError.text("Podany email jest niepoprawny");
+                problems = true;
+            }
+            //Check message
+            if (userMessage.length <= 10) {
+                messageError.show();
+                messageError.text("Za krótka wiadomość. Napisz coś więcej");
+                problems = true;
+            }
+
+            //Check checkbox
+            if (!checkbox.is(":checked")) {
+                checkboxError.show();
+                checkboxError.text("Musisz wyrazić zgodę");
+                problems = true;
+            }
+
+            if (problems == false) {
+                success.show();
+                success.text("Formularz został wysłany");
+                contactForm.submit();
+            }
+        })
+    }
     productChoice();
     calculatePrice();
     mobileNavigation();
     desktopNavigation();
     hideMobNav();
     mobileNav();
-
+    validate();
 })
