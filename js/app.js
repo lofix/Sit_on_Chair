@@ -166,9 +166,9 @@ $(document).ready(function() {
         var messageError = $("#message_error");
         var checkboxError = $("#checkbox_error");
         var success = $("#success_box");
-        var problems = false;
 
         contactForm.on("submit", function() {
+            var problems = false;
             event.preventDefault();
             nameError.hide();
             emailError.hide();
