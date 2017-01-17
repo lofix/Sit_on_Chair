@@ -3,14 +3,18 @@ $(document).ready(function() {
     var hideMobNav = function() {
         var mobileNav = $("#mobile_nav_expanded");
         var hamburgerMenu = $("#hamburger_menu");
+        var breakpoint = 542;
         $(window).on("resize", function() {
 
             var windowWidth = $(this).width();
-            if (windowWidth >= 542) {
-                mobileNav.css("display", "none");
-                hamburgerMenu.css("display", "none");
+            if (windowWidth >= breakpoint) {
+                mobileNav.hide();
+                // css("display", "none");
+                hamburgerMenu.hide()
+                    // css("display", "none");
             } else {
-                hamburgerMenu.css("display", "block");
+                hamburgerMenu.show();
+                // css("display", "block");
 
             }
         })
@@ -85,19 +89,24 @@ $(document).ready(function() {
         var suma = 0;
         var transportValue = $(".panel_right .transport");
         var values = $(".value");
+
         chairNames.on("click", function() {
             var chairName = $(this).text();
             chosenChair.text(chairName);
             if (chosenChair.text() == "Clair") {
+                // chairPrice.text(0);
                 chairPrice.text(100);
             } else if (chosenChair.text() == "Margarita") {
+                // chairPrice.text(0);
                 chairPrice.text(200);
             } else if (chosenChair.text() == "Selena") {
+                // chairPrice.text(0);
                 chairPrice.text(300);
             }
 
-            suma += parseInt(chairPrice.text());
+            suma = parseInt(chairPrice.text()) + parseInt(colorPrice.text()) + parseInt(patternPrice.text()) + parseInt(transportValue.text());
             sum.text(suma);
+            // console.log(chairPrice.text());
 
         })
         chairColors.on("click", function() {
@@ -111,9 +120,9 @@ $(document).ready(function() {
                 colorPrice.text(100);
             }
 
-            suma += parseInt(colorPrice.text());
+            // suma += parseInt(colorPrice.text());
+            suma = parseInt(chairPrice.text()) + parseInt(colorPrice.text()) + parseInt(patternPrice.text()) + parseInt(transportValue.text());
             sum.text(suma);
-
         })
         chairPatterns.on("click", function() {
             var chairPattern = $(this).text();
@@ -125,6 +134,7 @@ $(document).ready(function() {
             }
 
             suma += parseInt(patternPrice.text());
+            suma = parseInt(chairPrice.text()) + parseInt(colorPrice.text()) + parseInt(patternPrice.text()) + parseInt(transportValue.text());
             sum.text(suma);
 
         })
@@ -135,10 +145,10 @@ $(document).ready(function() {
                 transportValue.text(150);
             } else {
                 transportName.toggle();
-                transportValue.text("");
+                transportValue.text(0);
             }
-
-            suma += parseInt(transportValue.text());
+            // suma += parseInt(transportValue.text());
+            suma = parseInt(chairPrice.text()) + parseInt(colorPrice.text()) + parseInt(patternPrice.text()) + parseInt(transportValue.text());
             sum.text(suma);
 
         })
